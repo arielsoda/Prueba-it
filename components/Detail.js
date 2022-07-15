@@ -1,6 +1,7 @@
 import { BiCategory } from "react-icons/bi";
 import { MdUpdate } from "react-icons/md";
 import { RiQuillPenLine } from "react-icons/ri";
+import Image from 'next/image'
 
 const Detail = ({ details }) => {
 
@@ -12,7 +13,9 @@ const Detail = ({ details }) => {
                 <h4 className="text-base ml-2.5 font-mono font-semibold text-red-400">{details.categories[0].name}</h4>
             </div>
             <p className="flex items-center"><MdUpdate /> Ultima actualización: {details.modified}</p>
-            <img className="imagen" src={details.featured_media?.medium_large} alt={details.title} />
+            <div>
+                    <Image src={details.featured_media?.medium_large} alt={details.title} width={800} height={600} />
+                </div>
             <div className="mr-5 sm:mr-0" dangerouslySetInnerHTML={{ __html: details.content }}></div>
             <div className="mb-5 border border-solid">
                 <p className="flex items-center text-base ml-2.5 font-mono font-semibold"><RiQuillPenLine /> Autor: {details.author.name}</p>

@@ -14,8 +14,8 @@ const Detail = ({ details }) => {
             </div>
             <p className="flex items-center"><MdUpdate /> Ultima actualización: {details.modified}</p>
             <div>
-                    <Image src={details.featured_media?.medium_large} alt={details.title} width={800} height={600} />
-                </div>
+                <Image src={details.featured_media?.medium_large} alt={details.title} width={800} height={600} />
+            </div>
             <div className="mr-5 sm:mr-0" dangerouslySetInnerHTML={{ __html: details.content }}></div>
             <div className="mb-5 border border-solid">
                 <p className="flex items-center text-base ml-2.5 font-mono font-semibold"><RiQuillPenLine /> Autor: {details.author.name}</p>

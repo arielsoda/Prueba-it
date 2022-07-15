@@ -45,10 +45,10 @@ const OptionSearch = ({ products }) => {
                         <p className="text-3xl ml-2.5">Resultados para</p>
                     </div>
                     <div>
-                        <p className="text-3xl ml-2.5 text-red-600">"{router.query.search}"</p>
+                        <p className="text-3xl ml-2.5 text-red-600">{router.query.search}</p>
                     </div>
                     <div className="flex flex-row items-center justify-end w-1/5">
-                        <p className='mr-2.5'>"Más relevantes"</p>
+                        <p className='mr-2.5'>Más relevantes</p>
                         <input type="checkbox" checked={state.checked} onChange={handleChange} />
                     </div>
                 </div> : null}

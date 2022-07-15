@@ -49,7 +49,7 @@ const OptionSearch = ({ products }) => {
                     </div>
                     <div className="flex flex-row items-center justify-end w-auto">
                         <p className='mr-2.5'>Más relevantes</p>
-                        <input type="checkbox" checked={state.checked} onChange={handleChange} />
+                        <input className="mr-5 sm:mr-0" type="checkbox" checked={state.checked} onChange={handleChange} />
                     </div>
                 </div> : null}
         </div>

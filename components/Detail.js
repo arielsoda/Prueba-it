@@ -13,7 +13,7 @@ const Detail = ({ details }) => {
                 <h4 className="text-base ml-2.5 font-mono font-semibold text-red-400">{details.categories[0].name}</h4>
             </div>
             <p className="flex items-center"><MdUpdate /> Ultima actualización: {details.modified}</p>
-            <div>
+            <div className="mr-5 sm:mr-0">
                 <Image src={details.featured_media?.medium_large} alt={details.title} width={800} height={600} />
             </div>
             <div className="mr-5 sm:mr-0" dangerouslySetInnerHTML={{ __html: details.content }}></div>

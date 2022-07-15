@@ -37,17 +37,17 @@ const OptionSearch = ({ products }) => {
                     <p className="text-3xl">{products.error}</p>
                 </div> : null}
             {productos && !error?.length ?
-                <div className="flex h-14 mt-2.5">
-                    <div>
-                        <p className="text-4xl text-red-600 ml-2.5">{products?.products.size}</p>
+                <div className="flex h-14 mt-2.5 items-center">
+                    <div className="w-auto">
+                        <p className="text-xl sm:text-4xl text-red-600 ml-2.5 ">{products?.products.size}</p>
                     </div>
-                    <div>
-                        <p className="text-3xl ml-2.5">Resultados para</p>
+                    <div className="w-auto">
+                        <p className="text-xl sm:text-3xl ml-2.5">Resultados para</p>
                     </div>
-                    <div>
-                        <p className="text-3xl ml-2.5 text-red-600">{router.query.search}</p>
+                    <div className="w-auto">
+                        <p className="text-xl sm:text-3xl ml-2.5 text-red-600">{router.query.search}</p>
                     </div>
-                    <div className="flex flex-row items-center justify-end w-1/5">
+                    <div className="flex flex-row items-center justify-end w-auto">
                         <p className='mr-2.5'>Más relevantes</p>
                         <input type="checkbox" checked={state.checked} onChange={handleChange} />
                     </div>

@@ -3,7 +3,7 @@ import { FiGithub } from "react-icons/fi";
 
 const MyGitHub = () => {
     return (
-        <div className="flex items-center justify-center w-1/5">
+        <div className="flex items-center justify-center w-1/5 mr-5 sm:mr-0">
             <Link href="https://github.com/arielsoda">
                 <button className="flex items-center">
                     <p className="">GitHub</p>
